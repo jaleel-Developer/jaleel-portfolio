@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ========== Start NAVBAR Section ========== -->
+
+    <header class="section-navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <div class="logo">
+            <a href="index.html">
+              <span class="jaleel">Jaleel</span>
+              <span class="webDev">Web</span>
+              <span class="webDev">Developer</span>
+            </a>
+          </div>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="project.html" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========== End NAVBAR Section ========== -->
+    <!-- ========== Start contactSection ========== -->
+
+    <section class="contact-section" id="contact" style="margin-top: 12rem">
+      <div class="contact-container">
+        <h2 class="contact-title">Let's Work Together</h2>
+        <p class="contact-subtext">
+          Whether it's a static website, dynamic web app, or deployment on
+          GoDaddy or Hostinger — I'm ready to help bring your ideas to life.
+        </p>
+
+        <p class="contact-description">
+          I’m passionate about building custom web solutions tailored to your
+          needs. Feel free to reach out with your ideas or questions — I’m here
+          to help.
+        </p>
+
+        <form id="contact-form" class="contact-form">
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Your Email"
+            required
+          />
+          <input
+            type="phone"
+            name="user_phone"
+            placeholder="Your Mobile Number"
+            required
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-details">
+          <p><strong>📍 Location:</strong> Siddipet, India</p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:jaleeljeffery5672@gmail.com"
+              >jaleeljeffery5672@gmail.com</a
+            >
+          </p>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:9133103506">+91 9133103506</a>
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn" title="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="#" aria-label="Instagram" title="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== End contactSection ========== -->
+
+    <!-- ========== Start footer Section ========== -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Mohammad Jaleel. Designed & built by me
+          with 💚
+        </p>
+      </div>
+    </footer>
+    <!-- ========== End footer Section ========== -->
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("lFzkCe0UN767wAykk"); // Replace with your actual Public Key from EmailJS
+      })();
+
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          emailjs.sendForm("service_cgs50i9", "template_8mgbps6", this).then(
+            function () {
+              alert("Message sent successfully!");
+            },
+            function (error) {
+              console.error("FAILED...", error);
+              alert("Oops! Something went wrong.");
+            }
+          );
+        });
+    </script>
+  </body>
+</html>

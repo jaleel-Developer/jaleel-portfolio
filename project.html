@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projects page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== Start NAVBAR Section ========== -->
+
+    <header class="section-navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <div class="logo">
+            <a href="index.html">
+              <span class="jaleel">Jaleel</span>
+              <span class="webDev">Web</span>
+              <span class="webDev">Developer</span>
+            </a>
+          </div>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="project.html" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========== End NAVBAR Section ========== -->
+    <!-- ========== Start projects Section ========== -->
+
+    <section class="section-projects container" style="margin-top: 12rem">
+      <div class="projects-container">
+        <h2 class="projects-title">Projects</h2>
+
+        <!-- Project: ZechariaDoors -->
+        <div class="project-card">
+          <h3 class="project-name">ZechariaDoors</h3>
+          <p class="project-description">
+            A fully dynamic door portfolio website for a real client with cart,
+            quote form, image compression, and email integration.
+          </p>
+          <a
+            href="https://zechariadoors.com"
+            class="project-link"
+            target="_blank"
+            >Visit Website</a
+          >
+          <p class="tech-label">Technologies Used:</p>
+          <div class="tech-stack">
+            <span class="tech-tag html">HTML</span>
+            <span class="tech-tag css">CSS</span>
+            <span class="tech-tag js">JavaScript</span>
+            <span class="tech-tag node">Node.js</span>
+            <span class="tech-tag express">Express</span>
+            <span class="tech-tag sharp">Sharp</span>
+            <span class="tech-tag gmail">Nodemailer</span>
+            <span class="tech-tag vite">Vite</span>
+          </div>
+        </div>
+
+        <!-- Project: Todo App -->
+        <div class="project-card">
+          <h3 class="project-name">Todo Application</h3>
+          <p class="project-description">
+            A simple and interactive task manager to help users stay organized
+            and productive.
+          </p>
+          <a
+            href="https://jaleel-todo-app.com"
+            class="project-link"
+            target="_blank"
+            >Visit Website</a
+          >
+          <p class="tech-label">Technologies Used:</p>
+          <div class="tech-stack">
+            <span class="tech-tag html">HTML</span>
+            <span class="tech-tag css">CSS</span>
+            <span class="tech-tag js">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project: Food Much -->
+        <div class="project-card">
+          <h3 class="project-name">Food Much</h3>
+          <p class="project-description">
+            A responsive static website for a food delivery brand featuring
+            stylish UI and mobile-first design.
+          </p>
+          <a
+            href="https://jaleel-food-much.com"
+            class="project-link"
+            target="_blank"
+            >Visit Website</a
+          >
+          <p class="tech-label">Technologies Used:</p>
+          <div class="tech-stack">
+            <span class="tech-tag html">HTML</span>
+            <span class="tech-tag css">CSS</span>
+          </div>
+        </div>
+
+        <!-- Project: Gradient Color Generator -->
+        <div class="project-card">
+          <h3 class="project-name">Gradient Color Generator</h3>
+          <p class="project-description">
+            A fun utility that generates CSS gradient backgrounds and lets users
+            copy the code instantly.
+          </p>
+          <a
+            href="https://jaleel-gradient-color.com"
+            class="project-link"
+            target="_blank"
+            >Visit Website</a
+          >
+          <p class="tech-label">Technologies Used:</p>
+          <div class="tech-stack">
+            <span class="tech-tag html">HTML</span>
+            <span class="tech-tag css">CSS</span>
+            <span class="tech-tag js">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== End projects Section ========== -->
+    <!-- ========== Start footer Section ========== -->
+
+    <footer class="site-footer">
+  <div class="footer-container">
+    <p class="footer-copy">&copy; <span id="year"></span> Mohammad Jaleel. Designed & built by me with 💚</p>
+  </div>
+</footer>
+    <!-- ========== End footer Section ========== -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

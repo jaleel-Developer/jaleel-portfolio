@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>services page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== Start NAVBAR Section ========== -->
+
+    <header class="section-navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <div class="logo">
+            <a href="index.html">
+              <span class="jaleel">Jaleel</span>
+              <span class="webDev">Web</span>
+              <span class="webDev">Developer</span>
+            </a>
+          </div>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="project.html" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="caption-top" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========== End NAVBAR Section ========== -->
+    <!-- ========== Start services Section ========== -->
+
+    <section class="section-services" style="margin-top: 12rem">
+      <div class="services-container">
+        <h2 class="services-title">Services</h2>
+
+        <div class="services-grid">
+          <!-- Frontend -->
+          <div class="service-box">
+            <h3 class="service-heading green">Frontend Development</h3>
+            <p class="service-description">
+              I craft responsive, fast, and interactive websites using HTML,
+              CSS, JavaScript, and modern frameworks. Optimized for all screen
+              sizes and performance.
+            </p>
+          </div>
+
+          <!-- Backend -->
+          <div class="service-box">
+            <h3 class="service-heading blue">Backend Development</h3>
+            <p class="service-description">
+              I build powerful backend systems with Node.js, Express, and
+              MongoDB, making your site dynamic, secure, and scalable.
+            </p>
+          </div>
+
+          <!-- Deployment -->
+          <div class="service-box">
+            <h3 class="service-heading yellow">Website Deployment</h3>
+            <p class="service-description">
+              I deploy both static and dynamic websites on Hostinger and GoDaddy
+              — complete with domain, email, and SSL configuration.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-note">
+          Whether it’s a portfolio or full web app — I’ve got you covered.
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== End services Section ========== -->
+
+    <!-- ========== Start footer Section ========== -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Mohammad Jaleel. Designed & built by me
+          with 💚
+        </p>
+      </div>
+    </footer>
+    <!-- ========== End footer Section ========== -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
