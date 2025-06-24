@@ -749,6 +749,184 @@ main {
 
 /***** End  about me  section *****/
 
+/***** certificates Section *****/
+
+.certificates-section {
+  position: relative;
+  padding: 5rem 2rem;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Glowing blurred shapes */
+.certificates-section::before,
+.certificates-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 255, 200, 0.3), transparent 70%);
+  filter: blur(100px);
+  z-index: 0;
+  opacity: 0.5;
+  animation: darkGlow 20s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.certificates-section::before {
+  width: 300px;
+  height: 300px;
+  top: -80px;
+  left: -60px;
+}
+
+.certificates-section::after {
+  width: 300px;
+  height: 300px;
+  bottom: -80px;
+  right: -60px;
+}
+
+@keyframes darkGlow {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(40px, -30px) scale(1.1);
+  }
+  100% {
+    transform: translate(-30px, 20px) scale(1);
+  }
+}
+
+.certificates-section .section-common-heading {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  position: relative;
+  z-index: 1;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.slider-track {
+  display: flex;
+  gap: 1.5rem;
+  will-change: transform;
+  transition: none;
+  z-index: 1;
+}
+
+.certificate-slide {
+  flex: 0 0 auto;
+  width: 250px;
+  max-width: 90vw;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease;
+}
+
+.certificate-slide:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.2);
+}
+
+.certificate-slide img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.certificate-slide img:hover {
+  transform: scale(1.03);
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.slider-btn:hover {
+  opacity: 1;
+}
+
+.slider-btn.prev {
+  left: 0.8rem;
+}
+
+.slider-btn.next {
+  right: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    padding: 0 1rem;
+  }
+
+  .certificate-slide {
+    flex: 0 0 85%; /* Slightly smaller to prevent cutting */
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate-slide {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+
+  .slider-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+  }
+  .certificates-section .section-common-heading {
+    font-size: 2.4rem;
+  }
+}
+
+/***** End certificates Section *****/
+
 /***** servcies Section *****/
 
 .section-services {

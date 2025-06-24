@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   </head>
   <body>
     <!-- ========== Start NAVBAR Section ========== -->
@@ -102,6 +104,42 @@
 
 
     <!-- ========== End about me Section ========== -->
+
+
+
+  <!-- ========== Start certificartes Section ========== -->
+  
+  <section class="certificates-section">
+  <div class="container">
+    <h2 class="section-common-heading"><i class="fas fa-certificate" style="margin-right: 10px;"></i>
+     Certificates</h2>
+    
+    <div class="slider-container">
+
+
+      <div class="slider-track" id="sliderTrack">
+        <div class="certificate-slide"><img src="certificates/html-css-bootstrap.webp1.webp" alt="Certificate 1" /></div>
+        <div class="certificate-slide"><img src="certificates/bootstrap-flexbox.webp2.webp" alt="Certificate 2" /></div>
+        <div class="certificate-slide"><img src="certificates/python.webp3.webp" alt="Certificate 3" /></div>
+
+        <div class="certificate-slide"><img src="certificates/javascript.webp4.webp" alt="Certificate 1" /></div>
+        <div class="certificate-slide"><img src="certificates/sql.webp5.webp" alt="Certificate 2" /></div>
+        <div class="certificate-slide"><img src="certificates/javascriptEssential.webp6.webp" alt="Certificate 3" /></div>
+
+        <div class="certificate-slide"><img src="certificates/advavancedCSS.webp7.webp" alt="Certificate 1" /></div>
+        <div class="certificate-slide"><img src="certificates/developerFoundations.webp8.webp" alt="Certificate 2" /></div>
+        <div class="certificate-slide"><img src="certificates/nodeJS.webp9.webp" alt="Certificate 3" /></div>
+        <!-- Add more slides as needed -->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ========== End certificartes Section ========== -->
+  
 
     <!-- ========== Start services Section ========== -->
 
@@ -309,9 +347,8 @@
       typeLoop();
     
   document.getElementById("year").textContent = new Date().getFullYear();
-
-
-    </script>
-   
+    
+  </script>
+   <script src="certficates.js"></script>
   </body>
 </html>
