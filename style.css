@@ -202,7 +202,7 @@ section .container {
 
 /* Styling for "jaleel" text */
 .logo .jaleel {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #7aec94;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -395,15 +395,15 @@ section .container {
   }
 
   .logo .jaleel {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .logo .webDev {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .section-navbar .navbar ul li a {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .btn {
     font-size: 1.2rem;
