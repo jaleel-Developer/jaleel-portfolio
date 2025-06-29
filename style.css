@@ -758,6 +758,7 @@ main {
 /***** certificates Section *****/
 
 .certificates-section {
+  margin-top: 1.5rem;
   position: relative;
   padding: 5rem 2rem;
   background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
@@ -808,7 +809,7 @@ main {
 
 .certificates-section .section-common-heading {
   font-size: 3rem;
-  color: #ffffff;
+  color: goldenrod;
   text-align: center;
   margin-bottom: 3rem;
   text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
@@ -927,7 +928,7 @@ main {
     font-size: 1.2rem;
   }
   .certificates-section .section-common-heading {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -1015,6 +1016,11 @@ main {
   margin-top: 4rem;
   font-size: 1.6rem;
   color: #ccc;
+}
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 2rem;
+  }
 }
 
 /***** End servcies Section *****/
@@ -1168,6 +1174,12 @@ main {
   .tech-tag {
     font-size: 1rem;
     padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-title {
+    font-size: 2rem;
   }
 }
 

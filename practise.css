@@ -1,0 +1,149 @@
+.section-projects {
+  margin-top: 1.5rem;
+  background-color: #0a1b17;
+  padding: 6rem 2rem;
+  color: #fff;
+}
+
+.projects-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #00ffae;
+  text-shadow: 0 0 8px #00ffae88;
+}
+
+.project-card {
+  background-color: #092218;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-name {
+  font-size: 2rem;
+  color: #00ffae;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1.4rem;
+  color: #cccccc;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.project-link {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #00ffaa;
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
+}
+
+.tech-label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.tech-tag {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid;
+  border-radius: 50px;
+  position: relative;
+  background: transparent;
+  animation: ripple 2s infinite ease-in-out;
+}
+
+/* Ripple border animation */
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 currentColor;
+  }
+  70% {
+    box-shadow: 0 0 0 10px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+/* Color styles */
+.tech-tag.html {
+  color: #e34c26;
+  border-color: #e34c26;
+}
+.tech-tag.css {
+  color: #264de4;
+  border-color: #264de4;
+}
+.tech-tag.js {
+  color: #f0db4f;
+  border-color: #f0db4f;
+}
+.tech-tag.node {
+  color: #3c873a;
+  border-color: #3c873a;
+}
+.tech-tag.express {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.tech-tag.sharp {
+  color: #ff6f61;
+  border-color: #ff6f61;
+}
+.tech-tag.gmail {
+  color: #d93025;
+  border-color: #d93025;
+}
+.tech-tag.vite {
+  color: #646cff;
+  border-color: #646cff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2.4rem;
+  }
+
+  .project-card {
+    padding: 2rem;
+  }
+
+  .project-description,
+  .project-link,
+  .tech-label {
+    font-size: 1.2rem;
+  }
+
+  .tech-tag {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
